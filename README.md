@@ -8,7 +8,7 @@ The objective of this game is to achieve more score against the opponent.
 WHERE DO I PLAY THIS GAME?:
 This game can be played through the p5js.org using this link https://preview.p5js.org/kaique.gabriel.me/present/OIFQ1KanE or uploading the game archives in this link https://editor.p5js.org/ This game can be played only on PC.
 
-HOW TO PLAY?:
+HOW TO PLAY?
 The key ↑ up the left bar.
 
 The key ↓ down the left bar.
