@@ -43,7 +43,6 @@ function setup() {
 
 function draw() {
   background(0);
-
   bolinha();
   movimentoBolinha();
   colisaoBorda();
@@ -94,6 +93,7 @@ function movimentoRaquete() {
   if (keyIsDown(UP_ARROW)) {
     yRaquete -= 6;
   }
+
   if (keyIsDown(DOWN_ARROW)) {
     yRaquete += 6;
   }
@@ -109,6 +109,7 @@ function colisaoMinhaRaquete() {
     yBolinha,
     dBolinha
   );
+
   if (colidiu) {
     velocidadeXbolinha *= -1;
     raquetada.play();
@@ -125,6 +126,7 @@ function colisaoRaqueteOponente() {
     yBolinha,
     dBolinha
   );
+
   if (colidiu) {
     velocidadeXbolinha *= -1;
     raquetada.play();
@@ -136,7 +138,6 @@ function movimentoRaqueteOponente() {
     yBolinha - yRaqueteOponente - alturaRaqueteOponente / 2 - 30;
   yRaqueteOponente += movimentoYraqueteOponente + chanceDeErrar
   calculaChanceDeErrar();
-  
 }
 
 function placar() {
@@ -171,15 +172,18 @@ function preload() {
 
 function calculaChanceDeErrar(){
   if (placarOponente >= meuPlacar){
-    chanceDeErrar +=1
+    chanceDeErrar +=1;
+    
     if (chanceDeErrar >= 39){
-    chanceDeErrar = 40
+    chanceDeErrar = 40;
   }
  }
+
   else {
-    chanceDeErrar -= 1
+    chanceDeErrar -= 1;
+
     if (chanceDeErrar <= 35){
-    chanceDeErrar = 35
+    chanceDeErrar = 35;
     }
   }
 }
