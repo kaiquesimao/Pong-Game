@@ -5,10 +5,12 @@ This project was created by me, in order to study the Javascript programming lan
 
 The objective of this game is to achieve more score against the opponent.
 
-WHERE DO I PLAY THIS GAME?:
-This game can be played through the p5js.org using this link https://preview.p5js.org/kaique.gabriel.me/present/OIFQ1KanE or using Live Server plugin for Vscode.
+# WHERE DO I PLAY THIS GAME?:
 
-HOW TO PLAY?
+Go to: https://kaiquesimao.github.io/Pong-Game/ or use Live Server plugin for Vscode.
+
+# HOW TO PLAY?
+
 The key ↑ up the left bar.
 
 The key ↓ down the left bar.
