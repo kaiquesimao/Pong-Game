@@ -11,6 +11,8 @@ Go to: https://kaiquesimao.github.io/Pong-Game/
 
 # HOW TO PLAY?
 
+First of all click on the page to activate the sound.
+
 The key ↑ up the left bar.
 
 The key ↓ down the left bar.
