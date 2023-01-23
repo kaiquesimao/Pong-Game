@@ -38,7 +38,7 @@ let placarOponente = 0;
 
 function setup() {
   createCanvas(600, 400);
-  trilha.loop();
+  userStartAudio(trilha.loop());
 }
 
 function draw() {
@@ -136,7 +136,7 @@ function colisaoRaqueteOponente() {
 function movimentoRaqueteOponente() {
   movimentoYraqueteOponente =
     yBolinha - yRaqueteOponente - alturaRaqueteOponente / 2 - 30;
-  yRaqueteOponente += movimentoYraqueteOponente + chanceDeErrar
+  yRaqueteOponente += movimentoYraqueteOponente + chanceDeErrar;
   calculaChanceDeErrar();
 }
 
@@ -165,25 +165,23 @@ function marcarPonto() {
 }
 
 function preload() {
-  trilha = loadSound("trilha.mp3");
-  ponto = loadSound("ponto.mp3");
-  raquetada = loadSound("raquetada.mp3");
+  trilha = loadSound("src/audio/trilha.mp3");
+  ponto = loadSound("src/audio/ponto.mp3");
+  raquetada = loadSound("src/audio/raquetada.mp3");
 }
 
-function calculaChanceDeErrar(){
-  if (placarOponente >= meuPlacar){
-    chanceDeErrar +=1;
-    
-    if (chanceDeErrar >= 39){
-    chanceDeErrar = 40;
-  }
- }
+function calculaChanceDeErrar() {
+  if (placarOponente >= meuPlacar) {
+    chanceDeErrar += 1;
 
-  else {
+    if (chanceDeErrar >= 39) {
+      chanceDeErrar = 40;
+    }
+  } else {
     chanceDeErrar -= 1;
 
-    if (chanceDeErrar <= 35){
-    chanceDeErrar = 35;
+    if (chanceDeErrar <= 35) {
+      chanceDeErrar = 35;
     }
   }
 }

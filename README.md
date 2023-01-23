@@ -7,7 +7,7 @@ The objective of this game is to achieve more score against the opponent.
 
 # WHERE DO I PLAY THIS GAME?:
 
-Go to: https://kaiquesimao.github.io/Pong-Game/ or use Live Server plugin for Vscode.
+Go to: https://kaiquesimao.github.io/Pong-Game/
 
 # HOW TO PLAY?
 
